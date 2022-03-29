@@ -1,6 +1,8 @@
 package pro.sky.java.course2.employee;
 
 import org.springframework.stereotype.Service;
+import pro.sky.java.course2.employee.Exception.EmployeeBookOverflowException;
+import pro.sky.java.course2.employee.Exception.EmployeeExistsException;
 import pro.sky.java.course2.employee.Exception.EmployeeNotFoundException;
 
 @Service

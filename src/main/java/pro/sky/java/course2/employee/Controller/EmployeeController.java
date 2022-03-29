@@ -30,8 +30,8 @@ public class EmployeeController {
     }
 
     @GetMapping("/find")
-    public String find(@RequestParam String firstName, @RequestParam String lastName){
-        Employee result = employeeService.find(firstName, lastName);
+    public Employee find(@RequestParam String firstName, @RequestParam String lastName){
+        return employeeService.find(firstName, lastName);
     }
 
     private String generateMessage(Employee employee, String status){
